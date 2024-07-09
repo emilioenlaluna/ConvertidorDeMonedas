@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Encriptador Oracle One-Emilio Luna </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Red+Hat+Display:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://us.123rf.com/450wm/laures/laures1802/laures180200146/96212135-silueta-de-fresa-sobre-un-fondo-blanco-ilustraci%C3%B3n-vectorial.jpg?ver=6" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center titulo">Encriptador</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="https://github.com/emilioenlaluna">@emilioenlaluna</a></li>
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a href="#test1">Encriptar</a></li>
+                    <li class="tab"><a href="#test2">Desencriptar</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="https://github.com/emilioenlaluna">@emilioenlaluna</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div id="test1" class="col s6 encriptar" style="height: 70vh;">
+            <div class="idea container center-align">
+                Ingrese el texto a encriptar
+            </div>
+            <section class="container">
+                <div class="input-field col s12">
+                    <label for="textonormal">Texto Normal</label>
+                    <textarea class="materialize-textarea textonormal" cols="30" rows="30"
+                        placeholder="Ingrese el texto a encriptar aquí" id="textonormal"></textarea>
+                </div>
+                <button class="btn-desencriptar" onclick="btnEncriptar()">Encriptar</button>
+                <br>
+                <br>
+                <div class="input-field col s12">
+                    <label for="salidatextonormal">Texto Encriptado</label>
+                    <textarea class="salidatextonormal materialize-textarea" cols="30" rows="30" placeholder="Salida"
+                        id="salidatextonormal"></textarea>
+
+
+                </div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+        </div>
+
+        <div id="test2" class="col s6 desencriptar" style="height: 70vh;">
+            <div class="idea container center-align">
+                Ingrese el texto a desencriptar
+            </div>
+            <section class="container">
+                <div class="input-field col s12">
+                    <label for="textoencriptado">Texto Encriptado</label>
+                    <textarea class="materialize-textarea textoencriptado" cols="30" rows="30"
+                        placeholder="Ingrese el texto a desencriptar aquí" id="textoencriptado"></textarea>
+                </div>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                <br>
+                <br>
+                <div class="input-field col s12">
+                    <label for="salidatextoencriptado">Texto Des-encriptado</label>
+                    <textarea class="salidatextoencriptado materialize-textarea" cols="30" rows="30" placeholder="Salida"
+                        id="salidatextoencriptado"></textarea>
+
+
+                </div>
+                <button class="copiardesencriptado" onclick="copiardesencriptado()">Copiar</button>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        Emilio Luna | 2023 | <a href="https://github.com/emilioenlaluna/Encriptador-Oracle-One-G5">Repositorio</a>
+    </footer>
+
+
+
+    <script src="main.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
